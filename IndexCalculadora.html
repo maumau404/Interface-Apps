@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCalculadora.css">
+    <title>Calculadora JS</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>---- Calculadora ----</h1>
+    </header>
+
+    <main id="container">
+
+        <div id="linhazero">
+
+            <input type="text" id="tela" disabled>
+
+        </div>
+
+        <div id="linhaum">
+
+            <button id="limpartela" onclick="limpar()">C</button>
+
+            <button id="divisao" onclick="appendValue('/')">÷</button>
+
+        </div>
+
+        <div id="linhadois">
+            <button id="sete" onclick="appendValue('7')">7</button>
+
+            <button id="oito" onclick="appendValue('8')">8</button>
+
+            <button id="nove" onclick="appendValue('9')">9</button>
+
+            <button id="multi" onclick="appendValue('*')">X</button>
+
+        </div>
+
+        <div id="linhatres">
+            <button id="quatro" onclick="appendValue('4')">4</button>
+
+            <button id="cinco" onclick="appendValue('5')">5</button>
+
+            <button id="seis" onclick="appendValue('6')">6</button>
+
+            <button id="sub" onclick="appendValue('-')">-</button>
+
+        </div>
+
+        <div id="linhaquatro">
+            <button id="um" onclick="appendValue('1')">1</button>
+
+            <button id="dois" onclick="appendValue('2')">2</button>
+
+            <button id="tres" onclick="appendValue('3')">3</button>
+
+            <button id="adi" onclick="appendValue('+')">+</button>
+
+        </div>
+
+        <div id="linhacinco">
+            <button id="zero" onclick="appendValue('0')">0</button>
+
+            <button id="ponto" onclick="appendValue('.')">.</button>
+
+            <button id="numberigual" onclick="calculate()">=</button>
+
+        </div>
+
+    </main>
+
+    <div>
+
+        <a href="indexMenu.html">
+            <button class="menu">Voltar ao Menu</button>
+        </a>
+
+    </div>
+
+    <script src="scriptCalculadora.js"></script>
+
+</body>
+
+</html>

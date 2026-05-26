@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleGEstorPessoas.css">
+    <title>Gestor de Vendas</title>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <h1>Pessoas</h1>
+    </header>
+
+    <section id="app1">
+        <a href="indexMenu.html">
+            <button id="botao">Voltar ao Menu Principal</button>
+        </a>
+
+    </section>
+
+    <section id="container">
+
+        <div id="cont1">
+
+            <p>Idade - Altura - Peso</p>
+
+            <label for="idadePessoa">Sua Idade:</label>
+            <input type="number" id="idadePessoa">
+
+            <label for="alturaPessoa">Sua altura (ex: 1.75):</label>
+            <input type="number" step="0.01" id="alturaPessoa">
+
+            <label for="pesoPessoa">Seu peso:</label>
+            <input type="number" step="0.1" id="pesoPessoa">
+
+        </div>
+
+        <div id="botoes">
+
+            <input type="button" value="Continuar" id="proximo1" onclick="rodar()">
+
+            <input type="button" value="Calcular" id="calc" onclick="calcular()">
+
+        </div>
+
+
+
+        <div id="cont2">
+
+            <p>CALCULO FINAL</p>
+
+            <div id="cards">
+                <div id="mediaV">
+
+                </div>
+
+                <div id="lucro">
+
+                </div>
+            </div>
+
+        </div>
+
+        <button onclick="novo()">Novo Calculo</button>
+
+    </section>
+    <script src="scriptGestorPessoas.js"></script>
+</body>
+
+</html>

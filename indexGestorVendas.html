@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleGestorVendas.css">
+    <title>Gestor de Vendas</title>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <h1>Gestor de Vendas</h1>
+    </header>
+
+    <section id="app1">
+        <a href="indexMenu.html">
+            <button id="botao">Voltar ao Menu Principal</button>
+        </a>
+
+    </section>
+
+    <section id="container">
+
+        <div id="cont1">
+
+            <p>Adicione o valor dos produtos</p>
+
+            <label for="custo">Custo do produto:</label>
+            <input type="number" name="custo" id="custoProduto">
+
+            <label for="valor">Valor do produto:</label>
+            <input type="number" name="valor" id="valorProduto">
+
+        </div>
+
+        <div id="botoes">
+
+            <input type="button" value="Continuar" id="proximo1" onclick="rodar()">
+
+            <input type="button" value="Calcular" id="calc" onclick="calcular()">
+
+        </div>
+
+
+
+        <div id="cont2">
+
+            <p>CALCULO FINAL</p>
+
+            <div id="mediaC">
+                
+            </div>
+
+            <div id="mediaV">
+
+            </div>
+
+            <div id="lucro">
+
+            </div>
+
+        </div>
+
+        <button onclick="novo()">Novo Calculo</button>
+
+    </section>
+    <script src="scriptGestorVendas.js"></script>
+</body>
+
+</html>

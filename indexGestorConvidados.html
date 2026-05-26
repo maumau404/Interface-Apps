@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Convidados</title>
+    <link rel="stylesheet" href="styleGestorConvidados.css">
+</head>
+
+<body>
+
+    <section id="app1">
+        <a href="indexMenu.html">
+            <button id="botao">Voltar ao Menu Principal</button>
+        </a>
+
+    </section>
+
+    <div class="container">
+        <h1>🎉 Gestor de Convidados</h1>
+
+        <!-- Passo 1: Definir o tamanho da lista -->
+        <div id="passo-limite">
+            <p>Quantos convidados sua lista vai ter?</p>
+            <input type="number" id="input-limite" min="1" placeholder="Ex: 5">
+            <button onclick="definirLimite()">Começar</button>
+        </div>
+
+        <!-- Passo 2: Cadastrar os convidados (fica oculto no início) -->
+        <div id="passo-cadastro" class="oculto">
+            <p id="status-contagem">Convidado 1 de X</p>
+            <input type="text" id="input-nome" placeholder="Nome do convidado">
+            <input type="number" id="input-idade" placeholder="Idade">
+            <button onclick="adicionarConvidado()">Adicionar</button>
+        </div>
+
+        <!-- Passo 3: Exibir o resultado final -->
+        <div id="passo-resultado" class="oculto">
+            <h2>=====================</h2>
+            <h3>Lista Final de Convidados</h3>
+            <ul id="lista-final"></ul>
+            <button onclick="reiniciar()">Criar Nova Lista</button>
+        </div>
+
+    </div>
+
+    <script src="scriptGestorConvidados.js"></script>
+</body>
+
+</html>

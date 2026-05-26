@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 5rem;
+    height: 100vh;
+    width: 100%;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(112, 121, 121);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 42rem;
+    width: 32rem;
+    gap: 0.5rem;
+    background-color: rgb(83, 85, 85);
+    border-radius: 0.5rem;
+}
+
+#linhazero {
+    display: flex;
+}
+
+#linhaum {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#linhadois {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#linhatres {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#linhaquatro {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#linhacinco {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#um,
+#dois,
+#tres,
+#quatro,
+#cinco,
+#seis,
+#sete,
+#oito,
+#nove,
+#ponto,
+#divisao,
+#adi,
+#numberigual,
+#sub,
+#multi {
+    height: 6rem;
+    width: 6.5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#numberigual {
+    background-color: #77f0a9;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#sub,
+#multi,
+#adi,
+#divisao {
+    background-color: #f7c576;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+#zero {
+    height: 6rem;
+    width: 13.5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#limpartela {
+    height: 6rem;
+    width: 20.6rem;
+    border-radius: 0.6rem;
+    background-color: #e74c3c;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#tela {
+    height: 6rem;
+    width: 27.5rem;
+    font-size: 28px;
+    text-align: right;
+    color: #333;
+    border-radius: 0.6rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu {
+    height: 6rem;
+    width: 15rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.menu:hover{
+    background-color: #857f7f;
+}
