@@ -34,7 +34,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 42rem;
+    height: 56rem;
     width: 32rem;
     gap: 0.5rem;
     background-color: rgb(83, 85, 85);
@@ -136,7 +136,7 @@ header {
 }
 
 .menu {
-    height: 6rem;
+    height: 4rem;
     width: 15rem;
     border-radius: 1rem;
     font-weight: 600;
@@ -146,4 +146,9 @@ header {
 
 .menu:hover{
     background-color: #857f7f;
+}
+
+.menu_botao {
+    padding-bottom: 1rem;
+
 }
